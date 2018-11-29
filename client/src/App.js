@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { PageHeader } from 'react-bootstrap';
+import Hero from './components/Hero';
 
 class App extends Component {
   render() {
@@ -9,17 +10,21 @@ class App extends Component {
 			width: '100%',
 			height: '100%',
 			backgroundColor: 'white',
+			paddingRight: '0px',
+			paddingLeft: '0px',
+
 			
 		};
+
+		var styles2 = {
+			width: '100%',
+		}
 
     return (
       <div id="perspective" class="perspective effect-airbnb">
 			
 			<div class="container" style={styles1}>
-			
-			<PageHeader>
-  Example page header <small>Subtext for header</small>
-</PageHeader>
+	<Hero />
 				<div class="wrapper">
 					
 					<header class="codrops-header">
@@ -33,7 +38,6 @@ class App extends Component {
 						</div>
 						<div class="column">
 							<nav class="codrops-demos">
-								<a href="index.html" class="current-demo">Airbnb Effect</a>
 								
 							</nav>
 							
